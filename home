@@ -1,0 +1,8 @@
+<!-- Home Section (Adjusted Size) -->
+  <section id="home" class="home-section">
+    <div class="container h-100 d-flex align-items-center justify-content-center">
+        <h2>Welcome to My Portfolio</h2>
+           <div class="content">
+                <p>Passionate about extracting insights from complex datasets, understanding user behavior, predicting future trends, and translating data into compelling stories. Explore my portfolio to see how I turn data into impactful solutions.</p>
+    </div>
+ </section>
