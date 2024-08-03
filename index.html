@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Existing styles from the About, Projects, Skills, and Contact Me sections */
+        .about-section {
+            text-align: center;
+            padding: 50px 0;
+        }
+        .about-section img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 5px solid #ddd;
+            object-fit: cover;
+        }
+        .about-section .content {
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        .projects-section {
+            text-align: center;
+            padding: 50px 0;
+        }
+        .card-deck .card {
+            margin-bottom: 20px;
+        }
+        .card img {
+            object-fit: cover;
+            height: 200px;
+        }
+        .skills-section {
+            text-align: center;
+            padding: 50px 0;
+        }
+        .card-columns .card {
+            margin-bottom: 20px;
+        }
+        .skills-section img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+        .contact-section {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 50px 0;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .contact-info div {
+            margin: 0 15px;
+            display: flex;
+            align-items: center;
+        }
+        .contact-info i {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .social-icons a {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            background-color: #e91e63;
+            color: #fff;
+            border-radius: 50%;
+            text-align: center;
+            position: relative;
+        }
+        .social-icons a img {
+            width: 24px;
+            height: 24px;
+        }
+        .social-icons a:hover .tooltip {
+            display: block;
+        }
+        .tooltip {
+            display: none;
+            position: absolute;
+            bottom: 70px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #000;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+
+        /* New styles for the sticky navigation bar */
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .nav-link {
+            cursor: pointer;
+        }
+
+        /* Updated styles for the Home section */
+        .home-section {
+            height: 20vh; /* Adjust the height as needed */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 0; /* Adjust the padding as needed */
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Yonas K.Tena</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section (Adjusted Size) -->
+    <section id="home" class="home-section">
+        <div class="container h-100 d-flex align-items-center justify-content-center">
+            <h2>Welcome to My Portfolio</h2>
+            <div class="content">
+                <p>Passionate about extracting insights from complex datasets, understanding user behavior, predicting future trends, and translating data into compelling stories. Explore my portfolio to see how I turn data into impactful solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About</h2>
+            <img src="images/about1.jpg" alt="Profile Image">
+            <div class="content">
+                <p>I'm a data analyst passionate about transforming raw data into actionable intelligence. With a Master's degree in Statistics from Stockholm University, I blend technical prowess with strategic thinking to uncover hidden patterns and drive data-driven decisions.</p>
+                <p>Skilled at translating intricate findings into clear, compelling narratives that empower businesses to succeed. Let's turn your data into a competitive advantage.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="card-deck">
+                <div class="card">
+                    <img src="images/projects/1.jpg" class="card-img-top" alt="Project 1 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Housing</h5>
+                        <p class="card-text">Property Valuation ML Model for Stockholm Housing Market .</p>
+                        <a href="https://github.com/YonaskT/Stockholm-Housing-Market" class="btn btn-secondary">Source Code</a>
+                        <a href="https://stockholmhousingmarket.streamlit.app/" class="btn btn-secondary">WebApp</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/projects/3.jpg" class="card-img-top" alt="Project 2 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Delivery Time</h5>
+                        <p class="card-text">Predicting Delivery Times with Machine Learning.</p>
+                        <a href="https://github.com/YonaskT/Delivery-time-analysis-prediction" class="btn btn-secondary">Source Code</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/projects/2.jpg" class="card-img-top" alt="Project 3 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Stocks</h5>
+                        <p class="card-text">Developed a Stock Price Forecasting Web App: Built Using Streamlit and Python.</p>
+                        <a href="https://github.com/YonaskT/stocks" class="btn btn-secondary">Source Code</a>
+                        <a href="https://stockssweden.streamlit.app/" class="btn btn-secondary">WebApp</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/projects/5.jpg" class="card-img-top" alt="Project 5 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Premier League Predictor</h5>
+                        <p class="card-text">Statistical Model to Predict Football Match Outcomes .</p>
+                        <a href="https://github.com/YonaskT/Football-Prediction" class="btn btn-secondary">Source Code</a>
+                        <a href="https://footballprediction.streamlit.app/" class="btn btn-secondary">WebApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="card">
+                        <img src="images/skills/1.png" class="card-img-top mx-auto d-block" alt="Skill 1 Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Python</h5>
+                            <p class="card-text">Google Advanced Data Analytics Certificate</p>
+                            <a href="https://coursera.org/share/6fe25009ad7d680d5c9fe9d3a2377d02" class="btn btn-primary">Link to course</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card">
+                        <img src="images/skills/2.png" class="card-img-top mx-auto d-block" alt="Skill 2 Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Data Visualization</h5>
+                            <p class="card-text">Tableau, Microsoft Power BI, Excel</p>
+                            <a href="https://coursera.org/share/758e3b871893e5598484fca196855d98" class="btn btn-primary">Link to course</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card">
+                        <img src="images/skills/3.png" class="card-img-top mx-auto d-block" alt="Skill 3 Image">
+                        <div class="card-body">
+                            <h5 class="card-title">SQL</h5>
+                            <p class="card-text">SQL for Data Science by University of California.</p>
+                            <a href="https://coursera.org/share/bfe813dacc3aa6e323636e342c0163e3" class="btn btn-primary">Link to course</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card">
+                        <img src="images/skills/4.png" class="card-img-top mx-auto d-block" alt="Skill 4 Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Machine Learning</h5>
+                            <p class="card-text">Machine Learning by Stanford University.</p>
+                            <a href="https://coursera.org/share/84e1e1bf0516aeedb640c5ed944e967f" class="btn btn-primary">Link to course</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <div>
+                    <i class="fas fa-envelope"></i>
+                    <span>yonasktena@gmail.com</span>
+                </div>
+                <div>
+                    <i class="fas fa-phone"></i>
+                    <span>+46 720024674</span>
+                </div>
+                <div>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Stockholm, Sweden</span>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/yonasktena/" target="_blank">
+                    <img src="icons/linkedin.png" alt="LinkedIn">
+                    <span class="tooltip">LinkedIn</span>
+                </a>
+                <a href="https://github.com/YonaskT" target="_blank">
+                    <img src="icons/github.png" alt="GitHub">
+                    <span class="tooltip">GitHub</span>
+                </a>
+                <a href="https://public.tableau.com/app/profile/yonas.tena/vizzes" target="_blank">
+                    <img src="icons/Tableau.png" alt="Twitter">
+                    <span class="tooltip">Tableau</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Scripts for Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+    </html>
+        
+
+
+
+             
+            
