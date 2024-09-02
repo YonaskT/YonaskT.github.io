@@ -5,7 +5,7 @@
           <img src="images/about1.jpg" alt="Profile Image">
           <div class="content">
               <p>Welcome to my portfolio website! I am a data-driven data analyst with a passion for transforming raw data into meaningful insights. I hold a Master's Degree in Statistics from Stockholm University and have hands-on experience in data analysis and statistical modeling, blending technical expertise with strategic vision.</p>
-              <p>I am proficient in Python, R, SQL, and visualization tools like Tableau and Power BI, excelling at querying and analyzing massive datasets to derive actionable insights. My ability to effectively communicate complex analyses makes me a valuable asset in driving data-driven decision-making.</p>
+              <p>I am proficient in Python, R, SQL, and visualization tools like Tableau and Power BI, excelling at querying and analyzing massive datasets to derive actionable insights. My ability to effectively communicate complex analyses makes me a valuable asset in driving data-driven decision making.</p>
           </div>
       </div>
   </section>
